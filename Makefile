@@ -1,3 +1,7 @@
+GIT_COMMIT=$(shell git log -n 1 --pretty=format:"%H" | cut -c 1-8)
+GIT_BRANCH=$(shell git rev-parse --abbrev-ref HEAD)
+DATE=$(shell date +"%Y%m%d%H")
+VERSION?=${GIT_BRANCH}.${GIT_COMMIT}.${DATE}
 
 .PHONY: install
 install:  ## install dependence
@@ -6,6 +10,11 @@ install:  ## install dependence
 .PHONY: run
 run:  ## run dev
 	@npm run dev
+
+.PHONY: build
+build:  # build images
+	@docker build -t austsxk/mater_station:${VERSION} -f Dockerfile .
+	@docker push  austsxk/mater_station:${VERSION}
 
 help:
 	@awk -F ':|##' '/^[^\t].+?:.*?##/ {\
