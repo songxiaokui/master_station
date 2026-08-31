@@ -18,19 +18,30 @@ interface Config {
 export const config: Config = {
   github: "https://github.com/songxiaokui",
   projects: [
-
-    // {
-    //   name: "divination",
-    //   desc: "AI 算卦 - 根据六次硬币随机结果，生成卦象，并使用 AI 分析",
-    //   link: "https://divination.sunls.de",
-    //   icon: "BrainCircuit",
-    // },
-    // {
-    //   name: "online-tools",
-    //   desc: "一款简洁高效的在线工具箱｜JSON 格式化，Crontab 时间计算，Base64 / URL 编解码",
-    //   link: "https://tool.sunls.de",
-    //   icon: "DraftingCompass",
-    // },
+    {
+      name: "动析 ATHLETICAX",
+      desc: "多源运动数据 AI 陪练 - 汇聚 Garmin/COROS/Keep 数据，AI 解析与智能训练计划",
+      link: "https://athleticax.austsxk.com/",
+      icon: "Activity",
+    },
+    {
+      name: "DeepSeek Harness",
+      desc: "AI 智能体平台 - 自托管的 DeepSeek Agent",
+      link: "https://deepseek.austsxk.com/",
+      icon: "Bot",
+    },
+    {
+      name: "SceneMint",
+      desc: "AI 图片生成 - 用自然语言描述你的想法，一键生成创意图片",
+      link: "https://img.austsxk.com/",
+      icon: "ImagePlus",
+    },
+    {
+      name: "幸运抽卡",
+      desc: "趣味随机抽卡小游戏 - 通过随机抽取体验惊喜结果与幸运时刻",
+      link: "https://wellgame.austsxk.com/",
+      icon: "Dices",
+    }
   ],
   links: [
     // {
@@ -55,7 +66,7 @@ export const config: Config = {
   about: {
     mail: "www.austsxk@gmail.com",
     me: "天之道，损有余而补不足；人之道，损不足而补有余。",
-    backend: ["Golang", "Python", "C++", "Linux", "Kubernetes", "Docker"],
+    backend: ["Golang", "Python", "C++", "Linux", "Kubernetes", "Docker", "LLM", "RAG", "MCP"],
     frontend: ["Vue", "React", "Next.js"],
   },
 }
