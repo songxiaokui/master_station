@@ -19,8 +19,14 @@ export const config: Config = {
   github: "https://github.com/songxiaokui",
   projects: [
     {
+      name: "AustMusic",
+      desc: "私人音乐空间 - 收藏心动旋律，享受专属聆听体验",
+      link: "https://music.austsxk.com/",
+      icon: "Headphones",
+    },
+    {
       name: "动析 ATHLETICAX",
-      desc: "多源运动数据 AI 陪练 - 汇聚 Garmin/COROS/Keep 数据，AI 解析与智能训练计划",
+      desc: "AI 运动数据分析 - 聚合 Garmin、COROS 与 Keep，生成训练洞察与计划",
       link: "https://athleticax.austsxk.com/",
       icon: "Activity",
     },
@@ -32,16 +38,16 @@ export const config: Config = {
     },
     {
       name: "SceneMint",
-      desc: "AI 图片生成 - 用自然语言描述你的想法，一键生成创意图片",
+      desc: "AI 图像生成 - 输入自然语言描述，一键生成创意图片",
       link: "https://img.austsxk.com/",
       icon: "ImagePlus",
     },
     {
       name: "幸运抽卡",
-      desc: "趣味随机抽卡小游戏 - 通过随机抽取体验惊喜结果与幸运时刻",
+      desc: "趣味随机抽卡 - 用随机选择开启惊喜时刻",
       link: "https://wellgame.austsxk.com/",
       icon: "Dices",
-    }
+    },
   ],
   links: [
     // {
